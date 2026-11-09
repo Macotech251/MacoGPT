@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacoGPT - AI Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+        <div class="brand">🤖 MacoGPT</div>
+
+        <button id="new-chat" class="new-chat">
+            + New Chat
+        </button>
+
+        <div class="history">
+            <h4>Recent chats</h4>
+            <div id="history-list"></div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <button id="theme-toggle">☀️ Switch theme</button>
+            <p>MacoGPT AI · Version 1.0</p>
+        </div>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <span>AI Assistant</span>
+            <span class="online">● Online</span>
+        </header>
+
+        <section id="chat-area" class="chat-area">
+
+            <div id="welcome" class="welcome">
+                <div class="robot">🤖</div>
+                <h1>Welcome to MacoGPT</h1>
+                <p>Your intelligent assistant. What can I help you with?</p>
+
+                <div class="suggestions">
+                    <button class="suggestion">Explain artificial intelligence</button>
+                    <button class="suggestion">Write Python code</button>
+                    <button class="suggestion">Help me learn something new</button>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="composer-area">
+            <div class="composer">
+                <textarea id="message-input"
+                    placeholder="Message MacoGPT..."
+                    rows="1"></textarea>
+
+                <button id="send-button">➤</button>
+            </div>
+
+            <p>AI can make mistakes. Check important information.</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
